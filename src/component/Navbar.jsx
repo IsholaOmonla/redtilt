@@ -30,7 +30,7 @@ const Navbar = () => {
 				</ul>
 
 				<div className="hidden lg:flex justify-center space-x-12 items-center">
-					<div className="py-2 px-2 bg-red-800 rounded-full h-17 w-17">
+					<div className="py-2 px-2 bg-red-800 rounded-full h-17 w-17 cursor-pointer">
 						<Moon className="rounded-full bg-darkred px-1 py-1 w-17"/>
 					</div>
 					<a href="#" className="bg-red-800 py-3 px-3 rounded-md">Start a project</a>
@@ -43,7 +43,7 @@ const Navbar = () => {
 				</div>
 			</div>
 			{mobileDrawerOpen && (
-				<div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
+				<div className="fixed right-0 z-20 bg-red-950 w-full p-12 flex flex-col justify-center items-center lg:hidden">
 					<ul>
 						{navItems.map((item, index) => (
 							<li key={index} className="py-4">
@@ -51,11 +51,11 @@ const Navbar = () => {
 							</li>
 						))}
 					</ul>
-					<div className="flex space-x-6">
-						<div className="py-1 px-1 border-2 border-darkred rounded-md h-17 w-17">
+					<div className="flex space-x-6 mt-6">
+						<div className="py-2 px-2 bg-red-800 rounded-full h-17 w-17 cursor-pointer">
 							<Moon className="rounded-full bg-darkred px-1 py-1 h-17 w-17"/>
 						</div>
-						<a href="#" className="py-2 px-3 border rounded-md">
+						<a href="#" className="bg-red-800 py-3 px-3 rounded-md">
 							Get a project
 						</a>
 					</div>
